@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratio sesion 5 - Uso de formulario HTML     
+    </title>
+    <style>
+        
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 30px;
+            background-color: beige;
+         }
+            
+    .container-form{
+        width: 60%;
+        margin: 0 px auto;
+        background-color: white;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0,0,0, 0.6);
+        background-image: none;
+        display:block;
+    }
+.titulo-form {
+    background-color: rgb(255, 127, 232);
+    text-align: center;
+    color:white;
+    padding: 5px;
+}
+.section{
+    display: block;
+    unicode-bidi: isolate;
+}
+  /* Estilos para el botón */
+  .button {
+            background-color: #4CAF50; /* Color de fondo */
+            color: white;              /* Color del texto */
+            border: none;              /* Elimina el borde */
+            padding: 10px 20px;        /* Tamaño del botón */
+            text-align: center;        /* Alinea el texto */
+            text-decoration: none;     /* Sin subrayado */
+            display: inline-block;     /* Estilo de bloque en línea */
+            font-size: 14px;           /* Tamaño del texto */
+            cursor: pointer;          /* Cambia el cursor al pasar el mouse */
+            border-radius: 5px;        /* Bordes redondeados */
+        }
+        .button1 {
+            background-color: #af4c4c; /* Color de fondo */
+            color: white;              /* Color del texto */
+            border: none;              /* Elimina el borde */
+            padding: 10px 20px;        /* Tamaño del botón */
+            text-align: center;        /* Alinea el texto */
+            text-decoration: none;     /* Sin subrayado */
+            display: inline-block;     /* Estilo de bloque en línea */
+            font-size: 14px;           /* Tamaño del texto */
+            cursor: pointer;          /* Cambia el cursor al pasar el mouse */
+            border-radius: 5px;        /* Bordes redondeados */
+        }
+    
+
+    </style>
+</head>
+<body>
+    <header> </header>
+    <nav> </nav>
+    <section class=" container-form"> 
+        <h1 class=" titulo-form"> Formulario registro de usuario</h1>
+        <form action="#"method= "post">
+            <fieldset> 
+            <legend> Datos personales</legend>
+                <label for="name">* Nombre:</label>
+                <input type="text" id="name" name="user_name" required placeholder="Nombre y apellido">
+                <br>
+                <label for="mail">* E-mail:</label>
+                <input type="email" id="mail" name="user_mail" required placeholder="instituto@.com">
+                <br>
+                <label for ="Telefono"> Telefono:</label>
+                <input type ="number" name="Telefono" placeholder="30123..">
+                <br>
+                <label for ="Edad" >Fecha nacimiento:</label>
+                <input type="date" name="fechanac" id="Edad">
+                <br>
+                <label for="Nivel_academico">Nivel Academico: </label>
+                <select name="Nivel_academico" id="Nivel_academico">
+                    <option value="0" selected ></option>
+                    <option value="1" disable> Primaria</option>
+                    <option value="2" selected >Bachillerato</option>
+                    <option value="3" selected >Pregrado</option>
+                    <option value="4" selected >Maestria</option>
+                    <option value="4" selected >Doctorado</option>
+                </select>
+                <br>
+                <label for="msg">Comentarios:</label>
+                <textarea id="msg" name="user_message" rows="4"></textarea>
+                <br>
+            </fieldset>
+                <fieldset>
+                    <legend> Credenciales de acceso</legend>
+                    <label for="Usuarioname">* Usuario:</label>
+                    <input type="text" id="Usuarioname" name="Usuarioname" required pattern="[A,Z]¨{3}" placeholder="AAA">
+                    <br>
+                    <label for=" Password"> Password</label>
+                    <input type="Password" id="Password" name="password" required minlength="8" >
+                </fieldset>
+
+               <input type= "submit" class="button" value = "enviar">
+               <input type="reset" class="button1" value = "cancelar">
+                </form>
+                
+        </form>
+    </section>
+    <footer> </footer>
+</body>
+</html>
+
+
+
